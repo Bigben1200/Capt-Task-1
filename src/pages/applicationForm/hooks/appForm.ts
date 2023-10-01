@@ -1,4 +1,4 @@
-import { GET_URL } from "@/config";
+import { GET_URL } from "@/Config";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import cloneDeep from "lodash.clonedeep";
