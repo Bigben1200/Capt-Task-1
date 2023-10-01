@@ -1,0 +1,18 @@
+#layout {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 125px 1fr;
+  grid-template-rows: max-content 1fr;
+  grid-template-areas:
+    "sidenav main"
+    "sidenav main";
+}
+
+#side-navigation {
+  grid-area: sidenav;
+}
+
+main#main {
+  grid-area: main;
+  overflow: auto;
+}

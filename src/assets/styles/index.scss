@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$green: #087b2f;
+
+body {
+  color: black;
+}
+
+// Overwrite Checkbox Styles
+.ant-checkbox {
+  .ant-checkbox-inner {
+    border-color: #d4d9e4;
+  }
+  &.ant-checkbox-checked {
+    .ant-checkbox-inner {
+      background-color: $green !important;
+      border-color: $green;
+    }
+  }
+}
+
+// Overwrite Switchbox Styles
+.ant-switch {
+  background: #fff;
+  border: 1px solid #cccccc;
+  &:hover {
+    background: none !important;
+  }
+  &.ant-switch-small {
+    height: 18px;
+  }
+  &.ant-switch-checked {
+    background: $green;
+    border-color: $green;
+    &:hover {
+      background: $green !important;
+    }
+    .ant-switch-handle {
+      &::before {
+        border: 1px solid #fff;
+      }
+    }
+  }
+
+  .ant-switch-handle {
+    &::before {
+      background-color: #f4f4f4;
+      border: 1px solid #cccccc;
+    }
+  }
+}
+
+.ant-select-selector {
+  border: 1px solid #a0a0a0;
+}
